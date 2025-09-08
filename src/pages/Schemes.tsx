@@ -4,8 +4,31 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FileText, DollarSign, Percent, Tractor, Sprout } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const Schemes = () => {
+  const { toast } = useToast();
+
+  const handleApplyScheme = (schemeName: string) => {
+    toast({
+      title: "Application Initiated",
+      description: `Your application for ${schemeName} has been started. You will be redirected to the application portal.`,
+    });
+  };
+
+  const handleContactSupport = () => {
+    toast({
+      title: "Contact Support",
+      description: "Connecting you to our support team for scheme assistance.",
+    });
+  };
+
+  const handleDownloadGuidelines = () => {
+    toast({
+      title: "Download Started",
+      description: "Scheme guidelines PDF is being downloaded.",
+    });
+  };
   const schemes = [
     {
       icon: DollarSign,
@@ -104,7 +127,11 @@ const Schemes = () => {
                       <h4 className="font-semibold text-sm text-primary mb-1">Eligibility:</h4>
                       <p className="text-sm text-muted-foreground">{scheme.eligibility}</p>
                     </div>
-                    <Button variant="agriculture" className="w-full">
+                    <Button 
+                      variant="agriculture" 
+                      className="w-full"
+                      onClick={() => handleApplyScheme(scheme.title)}
+                    >
                       Apply Now
                     </Button>
                   </div>
@@ -123,10 +150,18 @@ const Schemes = () => {
               </CardHeader>
               <CardContent>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button variant="hero" size="lg">
+                  <Button 
+                    variant="hero" 
+                    size="lg"
+                    onClick={handleContactSupport}
+                  >
                     Contact Support
                   </Button>
-                  <Button variant="outline" size="lg">
+                  <Button 
+                    variant="outline" 
+                    size="lg"
+                    onClick={handleDownloadGuidelines}
+                  >
                     Download Guidelines
                   </Button>
                 </div>
