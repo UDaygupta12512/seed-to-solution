@@ -40,7 +40,7 @@ const LanguageSupport = () => {
               {t("Multi-Language Support")}
             </CardTitle>
             <p className="text-muted-foreground">
-              Access farming support in your preferred language for better understanding and communication
+              {t("Access farming support in your preferred language for better understanding and communication")}
             </p>
           </CardHeader>
           <CardContent>
@@ -61,7 +61,7 @@ const LanguageSupport = () => {
               ))}
             </div>
             <p className="text-center text-sm text-muted-foreground mt-6">
-              Voice support and text assistance available in all listed languages
+              {t("Voice support and text assistance available in all listed languages")}
             </p>
           </CardContent>
         </Card>

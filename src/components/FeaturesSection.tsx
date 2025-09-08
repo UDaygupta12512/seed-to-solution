@@ -18,48 +18,48 @@ const FeaturesSection = () => {
     {
       icon: FileText,
       title: "Government Schemes",
-      description: "Access MSP schemes, central & state government loans, subsidies on pesticides and farming equipment.",
-      buttonText: "View Schemes",
+      description: t("Access MSP schemes, central & state government loans, subsidies on pesticides and farming equipment."),
+      buttonText: t("View Schemes"),
       buttonVariant: "agriculture" as const,
       onClick: () => navigate("/schemes"),
     },
     {
       icon: Cloud,
       title: "Climate Predictions",
-      description: "Get AI-powered weather forecasts and climate insights to plan your crops effectively for better yields.",
-      buttonText: "Check Weather",
+      description: t("Get AI-powered weather forecasts and climate insights to plan your crops effectively for better yields."),
+      buttonText: t("Check Weather"),
       buttonVariant: "default" as const,
       onClick: () => navigate("/climate"),
     },
     {
       icon: Camera,
       title: "Disease Detection",
-      description: "Upload plant images and detect diseases instantly with AI-powered analysis for immediate treatment recommendations.",
-      buttonText: "Upload Plant Image",
+      description: t("Upload plant images and detect diseases instantly with AI-powered analysis for immediate treatment recommendations."),
+      buttonText: t("Upload Plant Image"),
       buttonVariant: "hero" as const,
       onClick: () => navigate("/disease-detection"),
     },
     {
       icon: Mic,
       title: "Voice Support",
-      description: "Ask questions in your own language and get instant AI-powered answers. Supports multiple regional languages.",
-      buttonText: "Try Voice Support",
+      description: t("Ask questions in your own language and get instant AI-powered answers. Supports multiple regional languages."),
+      buttonText: t("Try Voice Support"),
       buttonVariant: "outline" as const,
       onClick: () => navigate("/voice-support"),
     },
     {
       icon: DollarSign,
       title: "Budget Planning",
-      description: "Get personalized recommendations based on your budget and farming needs for optimal resource allocation.",
-      buttonText: "Plan Budget",
+      description: t("Get personalized recommendations based on your budget and farming needs for optimal resource allocation."),
+      buttonText: t("Plan Budget"),
       buttonVariant: "agriculture" as const,
       onClick: () => navigate("/contact"),
     },
     {
       icon: Sprout,
       title: "Home Gardening",
-      description: "Perfect for domestic farmers and home vegetable plantation with tailored advice for small-scale farming.",
-      buttonText: "Start Gardening",
+      description: t("Perfect for domestic farmers and home vegetable plantation with tailored advice for small-scale farming."),
+      buttonText: t("Start Gardening"),
       buttonVariant: "default" as const,
       onClick: () => navigate("/contact"),
     },
@@ -73,8 +73,7 @@ const FeaturesSection = () => {
             {t("Comprehensive Farming Solutions")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to make informed farming decisions, from government support 
-            to AI-powered insights for sustainable agriculture.
+            {t("Everything you need to make informed farming decisions, from government support to AI-powered insights for sustainable agriculture.")}
           </p>
         </div>
 
