@@ -1,8 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Languages } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 const LanguageSupport = () => {
+  const { toast } = useToast();
+  const [selectedLanguage, setSelectedLanguage] = useState("EN");
+  
   const languages = [
     { name: "English", code: "EN" },
     { name: "हिंदी", code: "HI" },
@@ -13,6 +18,14 @@ const LanguageSupport = () => {
     { name: "मराठी", code: "MR" },
     { name: "বাংলা", code: "BN" },
   ];
+
+  const handleLanguageSelect = (language: { name: string; code: string }) => {
+    setSelectedLanguage(language.code);
+    toast({
+      title: "Language Changed",
+      description: `Interface language switched to ${language.name}. Voice support is now active in ${language.name}.`,
+    });
+  };
 
   return (
     <section className="py-16">
@@ -34,8 +47,13 @@ const LanguageSupport = () => {
               {languages.map((language) => (
                 <Badge 
                   key={language.code}
-                  variant="outline" 
-                  className="px-4 py-2 text-sm border-primary/20 hover:bg-primary/10 transition-colors"
+                  variant={selectedLanguage === language.code ? "default" : "outline"}
+                  className={`px-4 py-2 text-sm cursor-pointer transition-all duration-200 ${
+                    selectedLanguage === language.code 
+                      ? "bg-primary text-primary-foreground border-primary" 
+                      : "border-primary/20 hover:bg-primary/10 hover:border-primary/40"
+                  }`}
+                  onClick={() => handleLanguageSelect(language)}
                 >
                   {language.name}
                 </Badge>
