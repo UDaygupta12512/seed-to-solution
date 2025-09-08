@@ -1,12 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Languages } from "lucide-react";
-import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { useLanguage, useTranslation } from "@/contexts/LanguageContext";
 
 const LanguageSupport = () => {
   const { toast } = useToast();
-  const [selectedLanguage, setSelectedLanguage] = useState("EN");
+  const { currentLanguage, setLanguage } = useLanguage();
+  const { t } = useTranslation();
   
   const languages = [
     { name: "English", code: "EN" },
@@ -20,7 +21,7 @@ const LanguageSupport = () => {
   ];
 
   const handleLanguageSelect = (language: { name: string; code: string }) => {
-    setSelectedLanguage(language.code);
+    setLanguage(language);
     toast({
       title: "Language Changed",
       description: `Interface language switched to ${language.name}. Voice support is now active in ${language.name}.`,
@@ -36,7 +37,7 @@ const LanguageSupport = () => {
               <Languages className="h-8 w-8 text-primary-foreground" />
             </div>
             <CardTitle className="text-2xl md:text-3xl font-bold text-primary">
-              Multi-Language Support
+              {t("Multi-Language Support")}
             </CardTitle>
             <p className="text-muted-foreground">
               Access farming support in your preferred language for better understanding and communication
@@ -47,9 +48,9 @@ const LanguageSupport = () => {
               {languages.map((language) => (
                 <Badge 
                   key={language.code}
-                  variant={selectedLanguage === language.code ? "default" : "outline"}
+                  variant={currentLanguage.code === language.code ? "default" : "outline"}
                   className={`px-4 py-2 text-sm cursor-pointer transition-all duration-200 ${
-                    selectedLanguage === language.code 
+                    currentLanguage.code === language.code 
                       ? "bg-primary text-primary-foreground border-primary" 
                       : "border-primary/20 hover:bg-primary/10 hover:border-primary/40"
                   }`}

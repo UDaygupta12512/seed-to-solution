@@ -7,8 +7,13 @@ import {
   DollarSign, 
   Sprout 
 } from "lucide-react";
+import { useTranslation } from "@/contexts/LanguageContext";
+import { useNavigate } from "react-router-dom";
 
 const FeaturesSection = () => {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+  
   const features = [
     {
       icon: FileText,
@@ -16,6 +21,7 @@ const FeaturesSection = () => {
       description: "Access MSP schemes, central & state government loans, subsidies on pesticides and farming equipment.",
       buttonText: "View Schemes",
       buttonVariant: "agriculture" as const,
+      onClick: () => navigate("/schemes"),
     },
     {
       icon: Cloud,
@@ -23,6 +29,7 @@ const FeaturesSection = () => {
       description: "Get AI-powered weather forecasts and climate insights to plan your crops effectively for better yields.",
       buttonText: "Check Weather",
       buttonVariant: "default" as const,
+      onClick: () => navigate("/climate"),
     },
     {
       icon: Camera,
@@ -30,6 +37,7 @@ const FeaturesSection = () => {
       description: "Upload plant images and detect diseases instantly with AI-powered analysis for immediate treatment recommendations.",
       buttonText: "Upload Plant Image",
       buttonVariant: "hero" as const,
+      onClick: () => navigate("/disease-detection"),
     },
     {
       icon: Mic,
@@ -37,6 +45,7 @@ const FeaturesSection = () => {
       description: "Ask questions in your own language and get instant AI-powered answers. Supports multiple regional languages.",
       buttonText: "Try Voice Support",
       buttonVariant: "outline" as const,
+      onClick: () => navigate("/voice-support"),
     },
     {
       icon: DollarSign,
@@ -44,6 +53,7 @@ const FeaturesSection = () => {
       description: "Get personalized recommendations based on your budget and farming needs for optimal resource allocation.",
       buttonText: "Plan Budget",
       buttonVariant: "agriculture" as const,
+      onClick: () => navigate("/contact"),
     },
     {
       icon: Sprout,
@@ -51,6 +61,7 @@ const FeaturesSection = () => {
       description: "Perfect for domestic farmers and home vegetable plantation with tailored advice for small-scale farming.",
       buttonText: "Start Gardening",
       buttonVariant: "default" as const,
+      onClick: () => navigate("/contact"),
     },
   ];
 
@@ -59,7 +70,7 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Comprehensive Farming Solutions
+            {t("Comprehensive Farming Solutions")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Everything you need to make informed farming decisions, from government support 
@@ -72,10 +83,11 @@ const FeaturesSection = () => {
             <FeatureCard
               key={index}
               icon={feature.icon}
-              title={feature.title}
+              title={t(feature.title)}
               description={feature.description}
               buttonText={feature.buttonText}
               buttonVariant={feature.buttonVariant}
+              onClick={feature.onClick}
             />
           ))}
         </div>

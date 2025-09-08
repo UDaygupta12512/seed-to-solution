@@ -9,6 +9,7 @@ interface FeatureCardProps {
   buttonText: string;
   buttonVariant?: "default" | "hero" | "agriculture" | "outline";
   className?: string;
+  onClick?: () => void;
 }
 
 const FeatureCard = ({ 
@@ -17,7 +18,8 @@ const FeatureCard = ({
   description, 
   buttonText, 
   buttonVariant = "default",
-  className = ""
+  className = "",
+  onClick
 }: FeatureCardProps) => {
   return (
     <Card className={`group hover:shadow-card transition-all duration-300 bg-gradient-card border-border/50 ${className}`}>
@@ -31,7 +33,7 @@ const FeatureCard = ({
         </CardDescription>
       </CardHeader>
       <CardContent className="text-center">
-        <Button variant={buttonVariant} className="w-full">
+        <Button variant={buttonVariant} className="w-full" onClick={onClick}>
           {buttonText}
         </Button>
       </CardContent>
