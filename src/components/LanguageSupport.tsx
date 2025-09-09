@@ -29,30 +29,38 @@ const LanguageSupport = () => {
   };
 
   return (
-    <section className="py-16">
-      <div className="container mx-auto px-4">
-        <Card className="max-w-4xl mx-auto bg-gradient-card shadow-card">
-          <CardHeader className="text-center">
-            <div className="mx-auto w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mb-4">
-              <Languages className="h-8 w-8 text-primary-foreground" />
+    <section className="py-20 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5"></div>
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl opacity-30"></div>
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl opacity-30"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <Card className="max-w-5xl mx-auto bg-gradient-card shadow-feature border-0 backdrop-blur-sm">
+          <CardHeader className="text-center py-12">
+            <div className="mx-auto w-20 h-20 bg-gradient-hero rounded-2xl flex items-center justify-center mb-6 shadow-accent">
+              <Languages className="h-10 w-10 text-primary-foreground" />
             </div>
-            <CardTitle className="text-2xl md:text-3xl font-bold text-primary">
-              {t("Multi-Language Support")}
+            <CardTitle className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="bg-gradient-text bg-clip-text text-transparent">
+                {t("Multi-Language Support")}
+              </span>
             </CardTitle>
-            <p className="text-muted-foreground">
+            <div className="w-20 h-1 bg-gradient-hero mx-auto mb-6 rounded-full"></div>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               {t("Access farming support in your preferred language for better understanding and communication")}
             </p>
           </CardHeader>
-          <CardContent>
-            <div className="flex flex-wrap justify-center gap-3">
+          <CardContent className="pb-12">
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
               {languages.map((language) => (
                 <Badge 
                   key={language.code}
                   variant={currentLanguage.code === language.code ? "default" : "outline"}
-                  className={`px-4 py-2 text-sm cursor-pointer transition-all duration-200 ${
+                  className={`px-6 py-3 text-base font-medium cursor-pointer transition-all duration-300 hover:scale-105 ${
                     currentLanguage.code === language.code 
-                      ? "bg-primary text-primary-foreground border-primary" 
-                      : "border-primary/20 hover:bg-primary/10 hover:border-primary/40"
+                      ? "bg-gradient-hero text-primary-foreground border-primary shadow-accent" 
+                      : "border-primary/30 hover:bg-gradient-glow hover:border-primary/50 hover:shadow-soft bg-white/80 backdrop-blur-sm"
                   }`}
                   onClick={() => handleLanguageSelect(language)}
                 >
@@ -60,9 +68,14 @@ const LanguageSupport = () => {
                 </Badge>
               ))}
             </div>
-            <p className="text-center text-sm text-muted-foreground mt-6">
-              {t("Voice support and text assistance available in all listed languages")}
-            </p>
+            <div className="text-center">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full">
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                <p className="text-sm font-medium text-primary">
+                  {t("Voice support and text assistance available in all listed languages")}
+                </p>
+              </div>
+            </div>
           </CardContent>
         </Card>
       </div>
