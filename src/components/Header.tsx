@@ -7,9 +7,12 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Features", href: "/#features" },
-    { name: "About Us", href: "/#about" },
-    { name: "Testimonials", href: "/contact" },
+    { name: "Home", href: "/" },
+    { name: "Schemes", href: "/schemes" },
+    { name: "Climate", href: "/climate" },
+    { name: "Disease Detection", href: "/disease-detection" },
+    { name: "Voice Support", href: "/voice-support" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -37,11 +40,11 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Sign In Button */}
+          {/* Get Started Button */}
           <div className="hidden md:flex">
             <Link to="/schemes">
-              <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                Sign In
+              <Button variant="hero" size="lg">
+                Get Started
               </Button>
             </Link>
           </div>
