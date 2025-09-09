@@ -4,49 +4,32 @@ import heroImage from "@/assets/hero-farming.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-black/40" />
-      </div>
-
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-background">
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
+      <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Smart Farming for{" "}
-            <span className="text-harvest-orange">Better Harvests</span>
+          {/* Badge */}
+          <div className="inline-flex items-center px-4 py-2 mb-8 bg-primary text-primary-foreground rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-primary-foreground rounded-full mr-2"></div>
+            AI-Powered Agricultural Support for Indian Farmers
+          </div>
+          
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-foreground">
+            Empowering Indian Farmers with{" "}
+            <span className="text-primary">Krishi Jyoti</span>
           </h1>
-          <p className="text-lg md:text-xl mb-8 text-white/90 max-w-3xl mx-auto">
-            AI-powered support system for farmers with government schemes, climate predictions, 
-            disease recognition, and personalized recommendations based on your needs and budget.
+          
+          <p className="text-lg md:text-xl mb-8 text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Get government scheme information, MSP rates, subsidies, climate predictions, disease detection, and voice-based support—all in one comprehensive platform designed for Indian agriculture.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          
+          <div className="flex justify-center mb-16">
             <Link to="/schemes">
               <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-                Get Started
-              </Button>
-            </Link>
-            <Link to="/climate">
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="text-lg px-8 py-4 border-white/30 text-white hover:bg-white/10 hover:text-white"
-              >
-                Learn More
+                Get Started →
               </Button>
             </Link>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/70 rounded-full mt-2"></div>
         </div>
       </div>
     </section>

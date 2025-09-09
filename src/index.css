@@ -8,19 +8,19 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 170 25% 95%;
+    --foreground: 160 30% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 160 30% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 160 30% 15%;
 
-    /* Agricultural theme colors */
-    --primary: 120 60% 25%;
-    --primary-foreground: 0 0% 98%;
-    --primary-glow: 120 70% 35%;
+    /* Krishi Jyoti theme colors */
+    --primary: 160 85% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 160 75% 45%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -45,14 +45,14 @@ All colors MUST be HSL.
     --sky-blue: 200 90% 60%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(120 60% 25%), hsl(120 70% 35%));
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(120 5% 97%));
-    --gradient-accent: linear-gradient(135deg, hsl(25 95% 53%), hsl(25 95% 63%));
+    --gradient-hero: linear-gradient(135deg, hsl(160 85% 35%), hsl(160 75% 45%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(170 10% 97%));
+    --gradient-accent: linear-gradient(135deg, hsl(160 85% 35%), hsl(160 75% 45%));
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(120 60% 25% / 0.1);
-    --shadow-card: 0 8px 30px hsl(120 60% 25% / 0.08);
-    --shadow-accent: 0 8px 25px hsl(25 95% 53% / 0.3);
+    --shadow-soft: 0 4px 20px hsl(160 85% 35% / 0.1);
+    --shadow-card: 0 8px 30px hsl(160 85% 35% / 0.08);
+    --shadow-accent: 0 8px 25px hsl(160 85% 35% / 0.3);
 
     --radius: 0.5rem;
 

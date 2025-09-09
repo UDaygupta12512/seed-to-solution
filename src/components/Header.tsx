@@ -7,12 +7,9 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "Schemes", href: "/schemes" },
-    { name: "Climate", href: "/climate" },
-    { name: "Disease Detection", href: "/disease-detection" },
-    { name: "Voice Support", href: "/voice-support" },
-    { name: "Contact", href: "/contact" },
+    { name: "Features", href: "/#features" },
+    { name: "About Us", href: "/#about" },
+    { name: "Testimonials", href: "/contact" },
   ];
 
   return (
@@ -24,7 +21,7 @@ const Header = () => {
             <div className="flex items-center justify-center w-8 h-8 bg-gradient-hero rounded-lg">
               <Leaf className="h-5 w-5 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-primary">SmartFarm</span>
+            <span className="text-xl font-bold text-foreground">Krishi Jyoti</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -40,11 +37,11 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Get Started Button */}
+          {/* Sign In Button */}
           <div className="hidden md:flex">
             <Link to="/schemes">
-              <Button variant="hero" size="lg">
-                Get Started
+              <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                Sign In
               </Button>
             </Link>
           </div>
