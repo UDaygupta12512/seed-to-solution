@@ -2,17 +2,19 @@ import { Button } from "@/components/ui/button";
 import { Leaf, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "@/contexts/LanguageContext";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "Schemes", href: "/schemes" },
-    { name: "Climate", href: "/climate" },
-    { name: "Disease Detection", href: "/disease-detection" },
-    { name: "Voice Support", href: "/voice-support" },
-    { name: "Contact", href: "/contact" },
+    { name: t("Home"), href: "/" },
+    { name: t("Schemes"), href: "/schemes" },
+    { name: t("Climate"), href: "/climate" },
+    { name: t("Disease Detection"), href: "/disease-detection" },
+    { name: t("Voice Support"), href: "/voice-support" },
+    { name: t("Contact"), href: "/contact" },
   ];
 
   return (
@@ -44,7 +46,7 @@ const Header = () => {
           <div className="hidden md:flex">
             <Link to="/schemes">
               <Button variant="hero" size="lg">
-                Get Started
+                {t("Get Started")}
               </Button>
             </Link>
           </div>
@@ -75,7 +77,7 @@ const Header = () => {
               <div className="px-4 pt-4">
                 <Link to="/schemes" onClick={() => setIsMobileMenuOpen(false)}>
                   <Button variant="hero" className="w-full">
-                    Get Started
+                    {t("Get Started")}
                   </Button>
                 </Link>
               </div>
