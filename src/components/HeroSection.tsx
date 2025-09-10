@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-farming.jpg";
-import krishiJyotiLogo from "/lovable-uploads/aff92ae8-42e8-43e0-8834-dcc1075cad8b.png";
 import { useTranslation } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
@@ -23,13 +22,8 @@ const HeroSection = () => {
             {t("AI-Powered Agricultural Support for Indian Farmers")}
           </div>
           
-          {/* Enhanced heading with logo and typography */}
+          {/* Enhanced heading with improved typography */}
           <div className="flex flex-col items-center mb-8">
-            <img 
-              src={krishiJyotiLogo} 
-              alt="Krishi Jyoti Logo" 
-              className="w-20 h-20 md:w-24 md:h-24 mb-4 animate-pulse"
-            />
             <h1 className="text-5xl md:text-7xl font-bold leading-tight text-center">
               <span className="text-foreground">{t("Empowering Indian Farmers with")}</span><br />
               <span className="bg-gradient-text bg-clip-text text-transparent animate-pulse">Krishi Jyoti</span>

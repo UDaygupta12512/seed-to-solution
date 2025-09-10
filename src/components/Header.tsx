@@ -22,10 +22,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="flex items-center justify-center w-8 h-8 bg-gradient-hero rounded-lg">
-              <Leaf className="h-5 w-5 text-primary-foreground" />
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/829268bd-62ce-4a0d-a93f-3511aa20c385.png" 
+              alt="Krishi Jyoti Logo" 
+              className="w-10 h-10 object-contain"
+            />
             <span className="text-xl font-bold text-foreground">Krishi Jyoti</span>
           </Link>
 
