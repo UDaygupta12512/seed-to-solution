@@ -26,7 +26,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/829268bd-62ce-4a0d-a93f-3511aa20c385.png" 
               alt="Krishi Jyoti Logo" 
-              className="w-10 h-10 object-contain"
+              className="w-12 h-12 object-contain"
             />
             <span className="text-xl font-bold text-foreground">Krishi Jyoti</span>
           </Link>
