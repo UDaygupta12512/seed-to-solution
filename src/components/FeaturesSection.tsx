@@ -55,14 +55,6 @@ const FeaturesSection = () => {
       buttonVariant: "agriculture" as const,
       onClick: () => navigate("/contact"),
     },
-    {
-      icon: Sprout,
-      title: "Home Gardening",
-      description: t("Perfect for domestic farmers and home vegetable plantation with tailored advice for small-scale farming."),
-      buttonText: t("Start Gardening"),
-      buttonVariant: "default" as const,
-      onClick: () => navigate("/contact"),
-    },
   ];
 
   return (

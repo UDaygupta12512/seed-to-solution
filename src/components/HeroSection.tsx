@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-farming.jpg";
+import krishiJyotiLogo from "@/assets/krishi-jyoti-logo.png";
 import { useTranslation } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
@@ -22,11 +23,18 @@ const HeroSection = () => {
             {t("AI-Powered Agricultural Support for Indian Farmers")}
           </div>
           
-          {/* Enhanced heading with better typography */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-            <span className="text-foreground">{t("Empowering Indian Farmers with")}</span><br />
-            <span className="bg-gradient-text bg-clip-text text-transparent animate-pulse">Krishi Jyoti</span>
-          </h1>
+          {/* Enhanced heading with logo and typography */}
+          <div className="flex flex-col items-center mb-8">
+            <img 
+              src={krishiJyotiLogo} 
+              alt="Krishi Jyoti Logo" 
+              className="w-20 h-20 md:w-24 md:h-24 mb-4 animate-pulse"
+            />
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight text-center">
+              <span className="text-foreground">{t("Empowering Indian Farmers with")}</span><br />
+              <span className="bg-gradient-text bg-clip-text text-transparent animate-pulse">Krishi Jyoti</span>
+            </h1>
+          </div>
           
           {/* Enhanced description */}
           <p className="text-xl md:text-2xl mb-12 text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light">
