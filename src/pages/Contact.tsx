@@ -205,16 +205,16 @@ const Contact = () => {
           </div>
 
           {/* Emergency Contact */}
-          <Card className="max-w-2xl mx-auto mt-12 bg-gradient-accent text-accent-foreground">
-            <CardContent className="p-6 text-center">
-              <h3 className="text-xl font-bold mb-2">Emergency Agricultural Support</h3>
-              <p className="mb-4">For urgent farming emergencies and pest outbreaks</p>
+          <Card className="max-w-2xl mx-auto mt-12 bg-gradient-hero border-2 border-primary/20 shadow-xl">
+            <CardContent className="p-8 text-center">
+              <h3 className="text-2xl font-bold mb-3 text-primary-foreground">🚨 Emergency Agricultural Support</h3>
+              <p className="mb-6 text-lg text-primary-foreground/90">For urgent farming emergencies and pest outbreaks</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="outline" size="lg" className="border-accent-foreground/20 text-accent-foreground hover:bg-accent-foreground/10">
-                  Call Emergency Helpline
+                <Button variant="agriculture" size="lg" className="text-lg font-semibold shadow-lg">
+                  📞 Call Emergency Helpline
                 </Button>
-                <Button variant="outline" size="lg" className="border-accent-foreground/20 text-accent-foreground hover:bg-accent-foreground/10">
-                  WhatsApp Support
+                <Button variant="agriculture" size="lg" className="text-lg font-semibold shadow-lg">
+                  💬 WhatsApp Support
                 </Button>
               </div>
             </CardContent>

@@ -134,7 +134,7 @@ const VoiceSupport = () => {
               <div className="space-y-6">
                 <div className="flex justify-center">
                   <Button
-                    variant={isListening ? "destructive" : "hero"}
+                    variant={isListening ? "destructive" : "agriculture"}
                     size="lg"
                     onClick={handleStartListening}
                     className="w-24 h-24 rounded-full text-2xl"
