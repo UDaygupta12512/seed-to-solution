@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-farming.jpg";
-import krishiJyotiLogo from "/lovable-uploads/7b90cffd-b164-48ae-831f-4e3c7cf5b6c8.png";
+import krishiJyotiLogo from "/lovable-uploads/aff92ae8-42e8-43e0-8834-dcc1075cad8b.png";
 import { useTranslation } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
