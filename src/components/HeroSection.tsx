@@ -19,10 +19,14 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-5xl mx-auto">
           {/* Enhanced Badge */}
-          <div className="inline-flex items-center px-6 py-3 mb-10 bg-gradient-hero text-primary-foreground rounded-full text-sm font-semibold shadow-accent">
+          <div className="inline-flex items-center px-6 py-3 mb-6 bg-gradient-hero text-primary-foreground rounded-full text-sm font-semibold shadow-accent">
             <div className="w-2 h-2 bg-primary-foreground rounded-full mr-3 animate-pulse"></div>
             {t("AI-Powered Agricultural Support for Indian Farmers")}
           </div>
+          
+          <p className="text-lg md:text-xl mb-8 text-muted-foreground font-medium">
+            {t("Empowering Indian Farmers with Krishi Jyoti")}
+          </p>
           
           {/* Enhanced heading with improved typography */}
           <div className="flex flex-col items-center mb-8">
