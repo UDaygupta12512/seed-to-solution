@@ -9,12 +9,9 @@ const Header = () => {
   const { t } = useTranslation();
 
   const navigation = [
-    { name: t("Home"), href: "/" },
-    { name: t("Schemes"), href: "/schemes" },
-    { name: t("Climate"), href: "/climate" },
-    { name: t("Disease Detection"), href: "/disease-detection" },
-    { name: t("Voice Support"), href: "/voice-support" },
-    { name: t("Contact"), href: "/contact" },
+    { name: t("Features"), href: "#features" },
+    { name: t("About Us"), href: "#about" },
+    { name: t("Testimonials"), href: "#testimonials" },
   ];
 
   return (
@@ -44,8 +41,11 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Get Started Button */}
+          {/* Sign In Button */}
           <div className="hidden md:flex">
+            <Button variant="outline" size="lg" className="mr-4">
+              {t("Sign In")}
+            </Button>
             <Link to="/schemes">
               <Button variant="hero" size="lg">
                 {t("Get Started")}
@@ -76,7 +76,10 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="px-4 pt-4">
+              <div className="px-4 pt-4 space-y-2">
+                <Button variant="outline" className="w-full">
+                  {t("Sign In")}
+                </Button>
                 <Link to="/schemes" onClick={() => setIsMobileMenuOpen(false)}>
                   <Button variant="hero" className="w-full">
                     {t("Get Started")}

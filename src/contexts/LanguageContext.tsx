@@ -58,7 +58,11 @@ const translations = {
     "Access comprehensive information about central and state government schemes, subsidies, and financial support available for farmers across India.": "Access comprehensive information about central and state government schemes, subsidies, and financial support available for farmers across India.",
     "Application Initiated": "Application Initiated",
     "Your application for": "Your application for",
-    "has been started. You will be redirected to the application portal.": "has been started. You will be redirected to the application portal."
+    "has been started. You will be redirected to the application portal.": "has been started. You will be redirected to the application portal.",
+    "Features": "Features",
+    "About Us": "About Us", 
+    "Testimonials": "Testimonials",
+    "Sign In": "Sign In"
   },
   HI: {
     "Agricultural AI Assistant": "कृषि एआई सहायक",
@@ -95,7 +99,11 @@ const translations = {
     "Access comprehensive information about central and state government schemes, subsidies, and financial support available for farmers across India.": "भारत भर के किसानों के लिए उपलब्ध केंद्रीय और राज्य सरकार की योजनाओं, सब्सिडी और वित्तीय सहायता के बारे में व्यापक जानकारी प्राप्त करें।",
     "Application Initiated": "आवेदन प्रारंभ किया गया",
     "Your application for": "के लिए आपका आवेदन",
-    "has been started. You will be redirected to the application portal.": "शुरू किया गया है। आपको आवेदन पोर्टल पर पुनर्निर्देशित किया जाएगा।"
+    "has been started. You will be redirected to the application portal.": "शुरू किया गया है। आपको आवेदन पोर्टल पर पुनर्निर्देशित किया जाएगा।",
+    "Features": "विशेषताएं",
+    "About Us": "हमारे बारे में",
+    "Testimonials": "प्रशंसापत्र", 
+    "Sign In": "साइन इन"
   },
   ML: {
     "Agricultural AI Assistant": "കാർഷിക AI സഹായി",
