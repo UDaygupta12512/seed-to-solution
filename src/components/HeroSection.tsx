@@ -51,7 +51,7 @@ const HeroSection = () => {
                 <div className="w-10 h-10 bg-gradient-to-r from-accent to-accent/80 rounded-full border-3 border-background shadow-lg"></div>
                 <div className="w-10 h-10 bg-gradient-to-r from-primary/70 to-primary/50 rounded-full border-3 border-background shadow-lg"></div>
               </div>
-              <span className="text-base font-medium">Trusted by 10,000+ farmers</span>
+              <span className="text-base font-medium">{t("Trusted by 10,000+ farmers")}</span>
             </div>
           </div>
         </div>

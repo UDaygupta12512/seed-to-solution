@@ -17,7 +17,7 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: FileText,
-      title: "Government Schemes",
+      title: t("Government Schemes"),
       description: t("Access MSP schemes, central & state government loans, subsidies on pesticides and farming equipment."),
       buttonText: t("View Schemes"),
       buttonVariant: "agriculture" as const,
@@ -25,7 +25,7 @@ const FeaturesSection = () => {
     },
     {
       icon: Cloud,
-      title: "Climate Predictions",
+      title: t("Climate Predictions"),
       description: t("Get AI-powered weather forecasts and climate insights to plan your crops effectively for better yields."),
       buttonText: t("Check Weather"),
       buttonVariant: "default" as const,
@@ -33,7 +33,7 @@ const FeaturesSection = () => {
     },
     {
       icon: Camera,
-      title: "Disease Detection",
+      title: t("Disease Detection"),
       description: t("Upload plant images and detect diseases instantly with AI-powered analysis for immediate treatment recommendations."),
       buttonText: t("Upload Plant Image"),
       buttonVariant: "hero" as const,
@@ -41,7 +41,7 @@ const FeaturesSection = () => {
     },
     {
       icon: Mic,
-      title: "Voice Support",
+      title: t("Voice Support"),
       description: t("Ask questions in your own language and get instant AI-powered answers. Supports multiple regional languages."),
       buttonText: t("Try Voice Support"),
       buttonVariant: "outline" as const,
@@ -49,7 +49,7 @@ const FeaturesSection = () => {
     },
     {
       icon: DollarSign,
-      title: "Budget Planning",
+      title: t("Budget Planning"),
       description: t("Get personalized recommendations based on your budget and farming needs for optimal resource allocation."),
       buttonText: t("Plan Budget"),
       buttonVariant: "agriculture" as const,
@@ -74,7 +74,7 @@ const FeaturesSection = () => {
             <FeatureCard
               key={index}
               icon={feature.icon}
-              title={t(feature.title)}
+              title={feature.title}
               description={feature.description}
               buttonText={feature.buttonText}
               buttonVariant={feature.buttonVariant}

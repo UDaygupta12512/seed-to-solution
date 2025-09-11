@@ -52,7 +52,8 @@ const translations = {
     "Start Gardening": "Start Gardening",
     "Everything you need to make informed farming decisions, from government support to AI-powered insights for sustainable agriculture.": "Everything you need to make informed farming decisions, from government support to AI-powered insights for sustainable agriculture.",
     "Access farming support in your preferred language for better understanding and communication": "Access farming support in your preferred language for better understanding and communication",
-    "Voice support and text assistance available in all listed languages": "Voice support and text assistance available in all listed languages"
+    "Voice support and text assistance available in all listed languages": "Voice support and text assistance available in all listed languages",
+    "Trusted by 10,000+ farmers": "Trusted by 10,000+ farmers"
   },
   HI: {
     "Agricultural AI Assistant": "कृषि एआई सहायक",
@@ -83,7 +84,8 @@ const translations = {
     "Start Gardening": "बागवानी शुरू करें",
     "Everything you need to make informed farming decisions, from government support to AI-powered insights for sustainable agriculture.": "टिकाऊ कृषि के लिए सरकारी सहायता से लेकर एआई-संचालित अंतर्दृष्टि तक, सूचित कृषि निर्णय लेने के लिए आपको जो कुछ भी चाहिए।",
     "Access farming support in your preferred language for better understanding and communication": "बेहतर समझ और संचार के लिए अपनी पसंदीदा भाषा में कृषि सहायता प्राप्त करें",
-    "Voice support and text assistance available in all listed languages": "सूचीबद्ध सभी भाषाओं में आवाज सहायता और पाठ सहायता उपलब्ध है"
+    "Voice support and text assistance available in all listed languages": "सूचीबद्ध सभी भाषाओं में आवाज सहायता और पाठ सहायता उपलब्ध है",
+    "Trusted by 10,000+ farmers": "10,000+ किसानों द्वारा भरोसा किया गया"
   },
   ML: {
     "Agricultural AI Assistant": "കാർഷിക AI സഹായി",
