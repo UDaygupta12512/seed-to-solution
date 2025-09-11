@@ -5,14 +5,16 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FileText, DollarSign, Percent, Tractor, Sprout } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "@/contexts/LanguageContext";
 
 const Schemes = () => {
   const { toast } = useToast();
+  const { t } = useTranslation();
 
   const handleApplyScheme = (schemeName: string) => {
     toast({
-      title: "Application Initiated",
-      description: `Your application for ${schemeName} has been started. You will be redirected to the application portal.`,
+      title: t("Application Initiated"),
+      description: t("Your application for") + ` ${schemeName} ` + t("has been started. You will be redirected to the application portal."),
     });
   };
 
@@ -87,11 +89,10 @@ const Schemes = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-              Government Schemes & Subsidies
+              {t("Government Schemes & Subsidies")}
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Access comprehensive information about central and state government schemes, 
-              subsidies, and financial support available for farmers across India.
+              {t("Access comprehensive information about central and state government schemes, subsidies, and financial support available for farmers across India.")}
             </p>
           </div>
 

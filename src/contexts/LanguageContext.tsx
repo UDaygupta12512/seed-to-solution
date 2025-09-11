@@ -53,7 +53,12 @@ const translations = {
     "Everything you need to make informed farming decisions, from government support to AI-powered insights for sustainable agriculture.": "Everything you need to make informed farming decisions, from government support to AI-powered insights for sustainable agriculture.",
     "Access farming support in your preferred language for better understanding and communication": "Access farming support in your preferred language for better understanding and communication",
     "Voice support and text assistance available in all listed languages": "Voice support and text assistance available in all listed languages",
-    "Trusted by 10,000+ farmers": "Trusted by 10,000+ farmers"
+    "Trusted by 10,000+ farmers": "Trusted by 10,000+ farmers",
+    "Government Schemes & Subsidies": "Government Schemes & Subsidies",
+    "Access comprehensive information about central and state government schemes, subsidies, and financial support available for farmers across India.": "Access comprehensive information about central and state government schemes, subsidies, and financial support available for farmers across India.",
+    "Application Initiated": "Application Initiated",
+    "Your application for": "Your application for",
+    "has been started. You will be redirected to the application portal.": "has been started. You will be redirected to the application portal."
   },
   HI: {
     "Agricultural AI Assistant": "कृषि एआई सहायक",
@@ -85,7 +90,12 @@ const translations = {
     "Everything you need to make informed farming decisions, from government support to AI-powered insights for sustainable agriculture.": "टिकाऊ कृषि के लिए सरकारी सहायता से लेकर एआई-संचालित अंतर्दृष्टि तक, सूचित कृषि निर्णय लेने के लिए आपको जो कुछ भी चाहिए।",
     "Access farming support in your preferred language for better understanding and communication": "बेहतर समझ और संचार के लिए अपनी पसंदीदा भाषा में कृषि सहायता प्राप्त करें",
     "Voice support and text assistance available in all listed languages": "सूचीबद्ध सभी भाषाओं में आवाज सहायता और पाठ सहायता उपलब्ध है",
-    "Trusted by 10,000+ farmers": "10,000+ किसानों द्वारा भरोसा किया गया"
+    "Trusted by 10,000+ farmers": "10,000+ किसानों द्वारा भरोसा किया गया",
+    "Government Schemes & Subsidies": "सरकारी योजनाएं और सब्सिडी",
+    "Access comprehensive information about central and state government schemes, subsidies, and financial support available for farmers across India.": "भारत भर के किसानों के लिए उपलब्ध केंद्रीय और राज्य सरकार की योजनाओं, सब्सिडी और वित्तीय सहायता के बारे में व्यापक जानकारी प्राप्त करें।",
+    "Application Initiated": "आवेदन प्रारंभ किया गया",
+    "Your application for": "के लिए आपका आवेदन",
+    "has been started. You will be redirected to the application portal.": "शुरू किया गया है। आपको आवेदन पोर्टल पर पुनर्निर्देशित किया जाएगा।"
   },
   ML: {
     "Agricultural AI Assistant": "കാർഷിക AI സഹായി",

@@ -29,8 +29,8 @@ const HeroSection = () => {
           </p>
           
           {/* Enhanced heading with improved typography */}
-          <div className="flex flex-col items-center mb-8">
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight text-center">
+          <div className="flex flex-col items-center mb-12">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold leading-tight text-center">
               <span className="bg-gradient-text bg-clip-text text-transparent">
                 {t("Empowering Indian Farmers with Krishi Jyoti")}
               </span>
@@ -38,7 +38,7 @@ const HeroSection = () => {
           </div>
           
           {/* Enhanced description with better spacing */}
-          <p className="text-xl md:text-2xl mb-16 text-muted-foreground max-w-5xl mx-auto leading-relaxed font-light text-center">
+          <p className="text-2xl md:text-3xl mb-20 text-muted-foreground max-w-6xl mx-auto leading-relaxed font-light text-center">
             {t("Get government scheme information, MSP rates, subsidies, climate predictions, disease detection, and voice-based support—all in one comprehensive platform designed for Indian agriculture.")}
           </p>
           

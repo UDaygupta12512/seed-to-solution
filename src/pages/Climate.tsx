@@ -3,8 +3,10 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Cloud, Sun, CloudRain, Wind, Thermometer, Droplets } from "lucide-react";
+import { useTranslation } from "@/contexts/LanguageContext";
 
 const Climate = () => {
+  const { t } = useTranslation();
   const weatherData = {
     current: {
       temperature: "28°C",
